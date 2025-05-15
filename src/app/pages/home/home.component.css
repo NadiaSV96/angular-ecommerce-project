@@ -1,0 +1,132 @@
+.transition-section {
+    background-color: var(--color-primary-dark); 
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 40px;
+    max-width: 700px;
+    margin: -40px auto 2rem auto; 
+    font-family: var(--font-family-title);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .transition-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  .aperçu-produits {
+    text-align: center; 
+    margin-top: 4rem;
+  }
+
+  .produits-grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    margin: 4rem 6rem 4rem 6rem; 
+  }
+
+  .voir-plus {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; 
+    font-family: var(--font-family-text);;
+    font-size: large;
+    font-weight: 550;
+    color: var(--color-primary-dark); 
+    text-decoration: none;
+    margin:0 0 4rem 0;
+    overflow: hidden;
+  }
+
+  .voir-plus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.4s ease;
+  }
+  
+  .voir-plus:hover::after {
+    width: 100%; 
+  }
+  
+  .voir-plus i {
+    transition: transform 0.3s ease;
+  }
+  
+  .voir-plus:hover {
+    color: var(--color-primary); 
+  }
+  
+  .voir-plus:hover i {
+    transform: translateY(-3px);
+  }
+  
+  .notre-histoire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 6rem 0;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .histoire-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: -200px; 
+  }
+  
+  .histoire-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .histoire-texte {
+    flex: 1;
+    font-family: var(--font-family-text);
+    color: var(--color-text-dark);
+    max-width: 700px;
+  }
+  
+  .histoire-texte h2 {
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .histoire-texte p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 1550px) {
+    .produits-grille {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 1175px) {
+    .produits-grille {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,59 @@
+<article class="product-detail">
+  <a routerLink="/produits">
+    <button class="back-btn">
+      <i class="fas fa-arrow-left"></i>
+      <span>Retour à la boutique</span>
+    </button>
+  </a>
+  
+
+  <div class="product-box">
+    <img
+      class="product-photo"
+      [src]="product?.imageUrl"
+      [alt]="'Image de ' + product?.name" />
+
+    <section class="product-description">
+      <h2 class="product-heading">{{ product?.name }}</h2>
+      <p class="product-price">{{ product?.price | currency:'CAD':'symbol' }}</p>
+      <p class="product-text">{{ product?.description }}</p>
+      <ul class="product-features">
+        <li *ngFor="let feature of product?.features">{{ feature }}</li>
+      </ul>
+    </section>
+  </div>
+
+  <ng-container *ngIf="hasSuggestions()">
+    <h3 class="suggestion-title">Nos suggestions :</h3>
+    <div class="icon-set">
+      <div class="icon-wrapper" *ngIf="product?.mokaPot">
+        <img src="assets/images/moka-pot.png" alt="Moka Pot" />
+      </div>
+      <div class="icon-wrapper" *ngIf="product?.frenchPress">
+        <img src="assets/images/french-press.png" alt="French Press" />
+      </div>
+      <div class="icon-wrapper" *ngIf="product?.manualMachine">
+        <img src="assets/images/coffee-machine-manual.png" alt="Manual Machine" />
+      </div>
+      <div class="icon-wrapper" *ngIf="product?.automaticMachine">
+        <img src="assets/images/coffee-machine-automatic.png" alt="Automatic Machine" />
+      </div>
+      <div class="icon-wrapper" *ngIf="product?.coffeeMaker">
+        <img src="assets/images/coffee-maker.png" alt="Coffee Maker" />
+      </div>
+      <div class="icon-wrapper" *ngIf="product?.nespresso">
+        <img src="assets/images/nespresso-machine.png" alt="Nespresso" />
+      </div>
+    </div>
+  </ng-container>
+</article>
+
+<div class="add-to-cart-container">
+  <button class="favorite-btn" (click)="toggleFavorite()">
+    <i [ngClass]="isFavorite ? 'fas fa-heart' : 'far fa-heart'"></i>
+  </button>
+  <button class="add-to-cart-btn">
+    Ajouter au panier
+  </button>
+</div>
+

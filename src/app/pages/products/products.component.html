@@ -1,0 +1,17 @@
+<h2>Tous nos produits</h2>
+
+<div class="search-bar">
+  <i class="fas fa-search"></i>
+  <input
+    type="text"
+    placeholder="Rechercher un produit..."
+    (input)="onSearch($event)"
+  >
+</div>
+
+<div class="produits-liste">
+  <app-product-card
+    *ngFor="let produit of filteredProducts"
+    [product]="produit">
+  </app-product-card>
+</div>

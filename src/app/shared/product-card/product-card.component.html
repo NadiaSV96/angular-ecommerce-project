@@ -1,0 +1,10 @@
+<div class="product-card">
+    <img [src]="product.imageUrl" [alt]="product.name" />
+    <h3>{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+    <p class="price">{{ product.price | currency:'CAD':'symbol' }}</p>
+    <button class="add-btn">Ajouter au panier</button>
+    <br>
+    <a class="voir-plus" [routerLink]="['/produits', product.id]">Voir plus...</a>
+  </div>
+  

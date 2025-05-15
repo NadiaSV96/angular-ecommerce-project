@@ -1,0 +1,29 @@
+<app-banner></app-banner>
+
+<section class="transition-section">
+  <h2>Nos Produits</h2>
+</section>
+
+<section class="aperçu-produits">
+    <div class="produits-grille">
+      <app-product-card
+        *ngFor="let produit of previewProducts"
+        [product]="produit">
+      </app-product-card>
+    </div>
+    <a routerLink="/produits" class="voir-plus">
+      <i class="fas fa-mug-hot"></i> Voir tous les produits
+    </a>
+  </section>
+    
+  <section class="notre-histoire">
+    <div class="histoire-image">
+      <img src="assets/images/pouring-beans-machine.jpg" alt="Machine à café versant des grains">
+    </div>
+    
+    <div class="histoire-texte">
+      <h2>Une histoire à chaque gorgée</h2>
+      <p>Depuis 1958, notre famille perpétue la passion du café. De la sélection des grains à la torréfaction artisanale, notre amour du détail offre à nos clients une expérience authentique et chaleureuse.</p>
+      <p>Chaque tasse raconte une histoire de tradition, de qualité et de passion transmise de génération en génération.</p>
+    </div>
+  </section>

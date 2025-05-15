@@ -1,0 +1,63 @@
+<section class="contact">
+    <h2 class="contact-heading">Contactez-nous</h2>
+    <p class="contact-text">Veuillez remplir le formulaire ci-dessous pour poser votre question.</p>
+    
+    <div class="contact-main">
+    
+        <div class="contact-image">
+          <img src="assets/images/cafe-laptop.jpg" alt="Café et Laptop">
+        </div>
+
+        <div class="coffee-beans-trail">
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean1" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean2" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean3" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean4" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean5" />  
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean6" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean7" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean8" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean9" />
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean10" /> 
+          <img src="assets/images/coffee-bean.svg" alt="Grain de café" class="coffee-bean bean11" />               
+        </div>
+        
+    
+        <div class="contact-form-box">
+            <form [formGroup]="contactform" (submit)="submitForm()">
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" formControlName="firstname" required>
+                <label for="lastname">Nom</label>
+                <input type="text" id="lastname" formControlName="lastname" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" formControlName="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" formControlName="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact-extra">
+  <div class="extra-info">
+    <h3 class="extra-title">Informations supplémentaires</h3>
+
+    <p class="adresse">
+      <strong>Notre adresse :</strong><br>
+        1234 Rue du Café, Montréal, QC H3Z 2Y7<br>
+        Tél. : 514-123-4567<br>
+        Courriel : info&#64;maboutiquecafe.com
+    </p>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/cafenapoleon1983?locale=fr_CA" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/cafenapoleon/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>

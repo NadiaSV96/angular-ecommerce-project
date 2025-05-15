@@ -1,0 +1,48 @@
+<section class="auth-page">
+
+  <div class="auth-form-box">
+
+    <h2>{{ showLogin ? 'Se connecter' : "S'inscrire" }}</h2>
+
+    <!-- Formulaire de connexion -->
+    <form *ngIf="showLogin" [formGroup]="loginForm" (submit)="submitLogin()">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" required>
+
+      <label for="password">Mot de passe</label>
+      <input id="password" type="password" formControlName="password" required>
+
+      <button type="submit">Se connecter</button>
+
+      <p>Pas encore de compte ?
+        <a (click)="toggleForm()">Créer un compte</a>
+      </p>
+    </form>
+
+    <!-- Formulaire d'inscription -->
+    <form *ngIf="!showLogin" [formGroup]="registerForm" (submit)="submitRegister()">
+      <label for="firstname">Prénom</label>
+      <input id="firstname" type="text" formControlName="firstname" required>
+
+      <label for="lastname">Nom</label>
+      <input id="lastname" type="text" formControlName="lastname" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" required>
+
+      <label for="password">Mot de passe</label>
+      <input id="password" type="password" formControlName="password" required>
+
+      <label for="confirmPassword">Confirmer le mot de passe</label>
+      <input id="confirmPassword" type="password" formControlName="confirmPassword" required>
+
+      <button type="submit">S'inscrire</button>
+
+      <p>Déjà un compte ?
+        <a (click)="toggleForm()">Se connecter</a>
+      </p>
+    </form>
+
+  </div>
+
+</section>
