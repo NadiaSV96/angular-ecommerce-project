@@ -23,20 +23,24 @@ export class ProductsService {
 
   constructor() { }
 
-  readonly url = 'http://localhost:3000/products';
+  readonly url = 'assets/produits.json';
   readonly http = inject(HttpClient);
+  private productsCache: Product[] | null = null;
+
 
   async getProducts(): Promise<Product[]> {
-    const response = await fetch(this.url);
-    return (await response.json()) ?? [];
+    if (!this.productsCache) {
+    this.productsCache = await this.http.get<Product[]>(this.url).toPromise() ?? [];
+    }
+    return this.productsCache;
   }
 
   async getProductById(id: number): Promise<Product | undefined> {
-    const response = await fetch(`${this.url}/${id}`);
-    return (await response.json()) ?? {};
+    const products = await this.getProducts();
+    return products.find(p => p.id === id);
   }
 
   contactData(firstname: string, lastname: string, email: string, message: string): void {
-   console.log(`Data submitted: ${firstname}, ${lastname}, ${email}, ${message}`);
+    console.log(`Data submitted: ${firstname}, ${lastname}, ${email}, ${message}`);
   }
 }

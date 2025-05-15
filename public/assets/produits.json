@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1,
+    "name": "Café Équitable",
+    "description": "Un café doux et éthique.",
+    "imageUrl": "assets/images/cafe1.png",
+    "price": 15.99,
+    "mokaPot": true,
+    "frenchPress": false,
+    "manualMachine": true,
+    "automaticMachine": false,
+    "coffeeMaker": true,
+    "nespresso": false,
+    "features": [
+      "Notes de dégustation : Boisé et rond",
+      "Origine : Amérique centrale, Amérique du sud et Asie",
+      "Torréfaction : Mi-noire et foncée"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Café Corsé",
+    "description": "Un arôme puissant pour bien démarrer la journée.",
+    "imageUrl": "assets/images/cafe2.png",
+    "price": 11.99,
+    "mokaPot": false,
+    "frenchPress": true,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": true,
+    "nespresso": false,
+    "features": [
+      "Notes de dégustation : Chocolaté et riche",
+      "Origine : Amérique centrale, Amérique du sud et Asie",
+      "Torréfaction : Foncée et pâle"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Café Décaféiné",
+    "description": "Un café sans caféine pour une journée calme.",
+    "imageUrl": "assets/images/cafe3.png",
+    "price": 11.99,
+    "mokaPot": false,
+    "frenchPress": true,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": true,
+    "nespresso": false,
+    "features": [
+      "Notes de dégustation : Boisé et rond",
+      "Origine : Amérique du sud",
+      "Torréfaction : Mi-noire"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Café Espresso",
+    "description": "Un café très foncé à l'image des cafés italiens siciliens.",
+    "imageUrl": "assets/images/cafe4.png",
+    "price": 13.99,
+    "mokaPot": true,
+    "frenchPress": false,
+    "manualMachine": true,
+    "automaticMachine": true,
+    "coffeeMaker": false,
+    "nespresso": false,
+    "features": [
+      "Notes de dégustation : Chocolaté et riche",
+      "Origine : Amérique du sud et Asie",
+      "Torréfaction : Foncée"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Capsule Nespresso",
+    "description": "Des capsules pour votre machine Nespresso.",
+    "imageUrl": "assets/images/cafe5.png",
+    "price": 19.99,
+    "mokaPot": false,
+    "frenchPress": false,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": false,
+    "nespresso": true,
+    "features": [
+      "Capsules compatibles avec la machine Nespresso",
+      "Boîte de 24 capsules de 9 g de café torréfié et moulu"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Moulin à café Bellucci",
+    "description": "Un moulin à café pour préparer votre café maison.",
+    "imageUrl": "assets/images/cafe6.png",
+    "price": 189.99,
+    "mokaPot": false,
+    "frenchPress": false,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": false,
+    "nespresso": false,
+    "features": [
+      "Moulin à technologie antistatique",
+      "Minuteie électronique de précision",
+      "Écran tactile"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Machine automatique à café",
+    "description": "Une machine automatique à café pour les matins pressés.",
+    "imageUrl": "assets/images/cafe7.png",
+    "price": 3599.99,
+    "mokaPot": false,
+    "frenchPress": false,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": false,
+    "nespresso": false,
+    "features": [
+      "Réservoir d'eau de 3 L",
+      "Récipient à grains de 500 g",
+      "Préchauffage intelligent",
+      "Plusieurs commandes programables : intensité du café, quantité de lait, etc."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Machine à café manuelle Bellucci",
+    "description": "Une machine à café manuelle pour les vrais amateurs de café.",
+    "imageUrl": "assets/images/cafe8.png",
+    "price": 349.99,
+    "mokaPot": false,
+    "frenchPress": false,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": false,
+    "nespresso": false,
+    "features": [
+      "Réservoir à eau transparent amovible de 1,2 L",
+      "Portefiltre et filtre en acier ino-xydable pour un café de qualité",
+      "Préchauffage intelligent",
+      "Buse vapeur pivotante en acier inoxydable / Vapeur pour le lait / eau chaude"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Mousseur à lait Latte Pro",
+    "description": "Un mousseur à lait pour préparer vos latte maison.",
+    "imageUrl": "assets/images/cafe9.png",
+    "price": 149.99,
+    "mokaPot": false,
+    "frenchPress": false,
+    "manualMachine": false,
+    "automaticMachine": false,
+    "coffeeMaker": false,
+    "nespresso": false,
+    "features": [
+      "Fonctions lait moussé chaud ou froid",
+      "Système de chauffage à induction",
+      "Nettoyage simplifié"
+    ]
+  }
+]
