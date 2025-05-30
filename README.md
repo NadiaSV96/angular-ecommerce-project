@@ -151,7 +151,7 @@ ng e2e
 ## 📄 Credits
 
 Created by **Nadia Simard Villa**
-Student in AEC IoT & AI, Collège Ahuntsic, Spring 2025
+Student in AEC IoT & AI, Collège Ahuntsic, Spring 2025  
 
 Under the supervision of Michée Kamte, teacher and B.Eng., CEP
 
